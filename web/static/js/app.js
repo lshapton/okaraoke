@@ -19,3 +19,22 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+class OkKaraoke extends React.Component {
+  render() {
+    return (
+      <div className="app-name">
+        <h1><span className="orange">:ok</span>araoke</h1>
+        <p>Karaoke web application built using Elixir/Phoenix</p>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(
+  <OkKaraoke/>,
+  document.getElementById("splash-page")
+)
